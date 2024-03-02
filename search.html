@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar nav-1">
+    <section class="flex">
+        <a href="about2.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
+        <ul>
+            <li><a href="#">post property  <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+    </section>
+    </nav>
+
+    <nav class="navbar nav-2">
+        <section class="flex">
+            <div class="menu">
+                <div id="menu-btn" class="fas fa-bars"></div>
+            <ul>
+                <li><a href="#">buy<i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="#">house</a></li>
+                    <li><a href="#">flat</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">ready to move</a></li>
+                    <li><a href="#">furnished</a></li>
+                </ul>
+            </li>
+           
+            <li><a href="#">sell<i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="#">post property</a></li>
+                    <li><a href="#">dashboard</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+            </li>
+            <li><a href="#">rent<i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="#">house</a></li>
+                    <li><a href="#">flat</a></li>
+                    <li><a href="#">shop</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="#">help</a><i class="fas fa-angle-down"></i>
+                <ul>
+                    <li><a href="about2.html">about us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                </ul>  
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li><a href="#">saved <i class="far fa-heart"></i></a></li>
+        <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+        <ul>
+            <li><a href="login.html">login</a></li>
+            <li><a href="register.html">register</a></li>
+        </ul>
+    </li>
+
+    </ul>
+    </section>
+</nav>
+</header>
+
+<section class="filters">
+    <form action="" method="post">
+        <div id="close-filter"><i class="fas fa-times"></i></div>
+        <h3>filter the search</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>enter location<span>*</span></p>
+                    <input type="text" name="location" 
+                    required maxlength="50" placeholder="enter city name" class="input">
+                </div>
+                        <div class="box">
+                            <p>offer type <span>*</span></p>
+                             <select name="offer" class="input" required>
+                            <option value="sale">sale</option>
+                            <option value="resale">resale</option>
+                             <option value="rent">rent</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>property type <span>*</span></p>
+                     <select name="type" class="input" required>
+                    <option value="flat">flat</option>
+                    <option value="house">house</option>
+                     <option value="shop">shop</option>
+            </select>
+        </div>
+               <div class="box">
+                    <p>how many BHK<span>*</span></p>
+                    <select name="bhk" class="input" required>
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="5">5 BHK</option>
+                        <option value="6">6 BHK</option>
+                        <option value="7">7 BHK</option>
+                        <option value="8">8 BHK</option>
+                        <option value="9">9 BHK</option> 
+                    </select>
+            </div>    
+            <div class="box">
+                <p>minimum budget<span>*</span></p>
+                <select name="minimum" class="input" required>
+                    <option value="500000">5 lac</option>
+                    <option value="1000000">10 lac</option>
+                    <option value="1500000">15 lac</option>
+                    <option value="200000">2 lac</option>
+                    <option value="8000000">80 lac</option>
+                    <option value="20000000">2 Cr</option>
+                    <option value="100000">1 lac</option>
+                    <option value="50000000">5 Cr</option>
+                    <option value="5000000">50 lac</option>
+                    <option value="600000">6 lac</option>
+                    <option value="400000">4 lac</option>
+                </select>
+        </div>    
+        <div class="box">
+            <p>maximum budget<span>*</span></p>
+            <select name="maximum" class="input" required>
+                <option value="500000">5 lac</option>
+                <option value="1000000">10 lac</option>
+                <option value="1500000">15 lac</option>
+                <option value="200000">2 lac</option>
+                <option value="8000000">80 lac</option>
+                <option value="20000000">2 Cr</option>
+                <option value="100000">1 lac</option>
+                <option value="50000000">5 Cr</option>
+                <option value="5000000">50 lac</option>
+                <option value="600000">6 lac</option>
+                <option value="400000">4 lac</option>
+                </select>
+                </div>   
+                <div class="box">
+                    <p>status <span>*</span></p>
+                     <select name="status" class="input" required>
+                    <option value="ready to move">ready to move</option>
+                    <option value="under construction">under construction</option>
+            </select>
+        </div> 
+        <div class="box">
+            <p>furnished<span>*</span></p>
+             <select name="furnished" class="input" required>
+            <option value="unfurnished">unfurnished</option>
+            <option value="furnished">furnished</option>
+            <option value="semi-furnished">semi-furnished</option>
+    </select>
+</div> 
+            </div>
+            <input type="submit" value="search property" name="submit" class="btn">
+        </form>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <section class="flex">
+        <div class="box">
+            <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+            <a href="tel:1112223333"><i class="fas fa-phone"></i><span>111222333</span></a>
+            <a href="mailto:hinishyadav@gmail.com"><i class="fas fa-envelope"><span>hinishyadav@gmail.com</span></i></a>
+            <a href="#"><i class="fas fa-map-marker-alt"><span>Lucknow,India-226022</span></i></a>
+        </div>
+
+        <div class="box">
+            <a href="real.html"><span>home</span></a>
+            <a href="about2.html"><span>about</span></a>
+            <a href="contact2.html"><span>contact</span></a>
+            <a href="listings.html"><span>all listings</span></a>
+            <a href="#"><span>saved property</span></a>
+           
+        </div>
+        <div class="box">
+            <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+            <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <div class="credit">&copy; copyright @2024 by <span>mr.xyz designer</span> all right reserved!</div>
+</footer>
+
+
+    <script src="script.js"> </script>
+    <script>
+        document.querySelector('#filter-btn').onclick = () =>{
+            document.querySelector('filters').classList.add('active');
+        }
+        document.querySelector('#close-filter').onclick = () =>{
+            document.querySelector('filters').classList.remove2('active');
+        }
+    </script>
+</body>
+</html>
